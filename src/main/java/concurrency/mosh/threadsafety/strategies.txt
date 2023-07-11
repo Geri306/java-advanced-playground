@@ -1,0 +1,6 @@
+Strategies for writing thread-safe code:
+- confinement
+- immutability
+- synchronisation - by using locks [AVOID IT] : forces the code to run sequentially (challenging & error-prone: dead-lock can happen -> threads wait for each other indefinitely)
+- atomic objects
+- partitioning data into segments that can be accessed concurrently
